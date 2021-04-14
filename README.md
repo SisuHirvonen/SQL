@@ -33,4 +33,11 @@ Vataus: SELECT Kurssi.nimi, Kurssisuoritus.päivämäärä, kurssisuoritus.arvos
         FROM Kurssi, Kurssisuoritus
         WHERE Kurssi.kurssitunnus = Kurssisuoritus.kurssi
         
+### 11. Tehtävä
+Vataus: SELECT Opiskelija.nimi, Kurssisuoritus.päivämäärä, kurssisuoritus.arvosana 
+        FROM Opiskelija, Kurssisuoritus 
+        WHERE Opiskelija = Kurssisuoritus.Opiskelija
+
+
+        
 
