@@ -59,9 +59,16 @@ Koska useampi ihminen on tehnyt saman tehtävän.
 Vataus: SELECT kurssi FROM kurssisuoritus o
         WHERE o.kurssi
         NOT IN (SELECT opiskelija FROM Kurssisuoritus)
-        
+ 
 ### 16. Tehtävä
 Vataus:
+
+### 17. Tehtävä
+Vataus:
+        
+### 18. Tehtävä
+Vataus:SELECT k.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k LEFT JOIN Kurssisuoritus ks
+    ON k.kurssitunnus = ks.kurssi GROUP BY k.nimi
         
 
 
