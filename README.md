@@ -61,14 +61,18 @@ Vataus: SELECT kurssi FROM kurssisuoritus o
         NOT IN (SELECT opiskelija FROM Kurssisuoritus)
  
 ### 16. Tehtävä
-Vataus:
+Vataus: SELECT kurssi AS kurssikoodi, COUNT(*) AS lukumäärä
+        FROM Kurssisuoritus GROUP BY kurssi
 
 ### 17. Tehtävä
-Vataus:
+Vataus: SELECT Kurssi.nimi AS kurssi, COUNT(*) AS lukumäärä
+        FROM Kurssisuoritus, Kurssi 
+        WHERE Kurssi.kurssitunnus = Kurssisuoritus.Kurssi
+        GROUP BY kurssi
         
 ### 18. Tehtävä
 Vataus:SELECT k.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k LEFT JOIN Kurssisuoritus ks
-    ON k.kurssitunnus = ks.kurssi GROUP BY k.nimi
+        ON k.kurssitunnus = ks.kurssi GROUP BY k.nimi
         
 
 
