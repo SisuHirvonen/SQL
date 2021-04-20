@@ -71,9 +71,21 @@ Vataus: SELECT Kurssi.nimi AS kurssi, COUNT(*) AS lukumäärä
         GROUP BY kurssi
         
 ### 18. Tehtävä
-Vataus:SELECT k.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k LEFT JOIN Kurssisuoritus ks
+Vataus: SELECT k.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k LEFT JOIN Kurssisuoritus ks
         ON k.kurssitunnus = ks.kurssi GROUP BY k.nimi
+
+### 19. Tehtävä
+Vataus: INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus)
+        VALUES ('12345', 'SQL-kielen perusteet', 'Hei maailma')
         
+### 20. Tehtävä
+Vataus: SELECT * FROM kurssi
+
+### 21. Tehtävä
+Vataus: CREATE TABLE Juu (moi, hei, terve) ja PRAGMA TABLE_INFO(Juu)
+
+### 22. Tehtävä
+Vataus:
 
 
         
