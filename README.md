@@ -75,17 +75,27 @@ Vataus: SELECT k.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k 
         ON k.kurssitunnus = ks.kurssi GROUP BY k.nimi
 
 ### 19. Tehtävä
-Vataus: INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus)
-        VALUES ('12345', 'SQL-kielen perusteet', 'Hei maailma')
+Vataus: CREATE TABLE Kurssi (kurssitunnus, nimi, kuvaus)
         
 ### 20. Tehtävä
-Vataus: SELECT * FROM kurssi
+Vataus: INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus)
+        VALUES (12345, 'SQL-kielen perusteet', 'Select "Hei maailma"')
 
 ### 21. Tehtävä
-Vataus: CREATE TABLE Juu (moi, hei, terve) ja PRAGMA TABLE_INFO(Juu)
+Vataus: CREATE TABLE Testi (Moi, Hei, Terve)
 
 ### 22. Tehtävä
+Vataus: CREATE TABLE Kurssi (kurssitunnus integer, nimi varchar(200), kuvaus varchar(200))
+
+### 23. Tehtävä
+Vataus: Saman nimisiä opiskelijoita lisääntyy useita mutta opiskelija numero kasvaa aina yhdellä
+
+### 24. Tehtävä
+Vataus: CREATE TABLE Kurssi (kurssitunnus integer PRIMARY KEY, nimi varchar(100), kuvaus varchar(100))
+
+### 25. Tehtävä
 Vataus:
+
 
 
         
