@@ -94,7 +94,25 @@ Vataus: Saman nimisiä opiskelijoita lisääntyy useita mutta opiskelija numero 
 Vataus: CREATE TABLE Kurssi (kurssitunnus integer PRIMARY KEY, nimi varchar(100), kuvaus varchar(100))
 
 ### 25. Tehtävä
-Vataus:
+Vataus: CREATE TABLE Tehtävä
+        (
+        tunnus integer PRIMARY KEY,
+        nimi varchar(200) NOT NULL
+        );
+        CREATE TABLE Kurissitehtävä
+        (
+        tehtävä integer, 
+        kurssi integer,
+        FOREIGN KEY(tehtävä) REFERENCES Tehtävä(tunnus)
+        FOREIGN KEY(kurssi) REFERENCES Kurssi(kurssitunnus)
+        )
+        
+### 26. Tehtävä
+Vataus: INSERT INTO Tehtävä(nimi) VALUES("Tietoturva");
+        INSERT INTO Tehtävä(nimi) VALUES("Tietotekniikka");
+        
+### 27. Tehtävä
+Vataus: ALTER TABLE:n avulla voidaan lisätä, poistaa ja muokata olemassa olevia tauluja. Sillä voidaan myös luoda niihin rajoituksia.
 
 
 
