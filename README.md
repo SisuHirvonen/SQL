@@ -119,7 +119,21 @@ ADD komennolla voidaan lisätä pylväitä
 ALTER TABLE Customers
 ADD Email varchar(255);
 ````
+DROP komennolla taas voidaan poistaa pylväitä
+````
+ALTER TABLE Customers
+DROP COLUMN Email;
+````
+ALTER TABLE - ALTER/MODIFY COLUMN avulla vaihdetaan datan tyyppiä. Erillaisia vaihdettavia data tyyppejä ovat esim.
+````
+ALTER TABLE table_name
+ALTER COLUMN column_name datatype;
 
+ALTER TABLE table_name
+MODIFY COLUMN column_name datatype;
 
+ALTER TABLE table_name
+MODIFY column_name datatype;
+````
         
 
