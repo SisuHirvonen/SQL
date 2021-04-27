@@ -114,6 +114,11 @@ Vataus: INSERT INTO Tehtävä(nimi) VALUES("Tietoturva");
 ### 27. Tehtävä
 Vataus: ALTER TABLE:n avulla voidaan lisätä, poistaa ja muokata olemassa olevia tauluja. Sillä voidaan myös luoda niihin rajoituksia.
 
+ADD komennolla voidaan lisätä pylväitä
+````
+ALTER TABLE Customers
+ADD Email varchar(255);
+````
 
 
         
