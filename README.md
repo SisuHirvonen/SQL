@@ -135,5 +135,5 @@ MODIFY COLUMN column_name datatype;
 ALTER TABLE table_name
 MODIFY column_name datatype;
 ````
-        
+Näiden koodien avulla voidaan siis muokata taulukkojen sisältöä.       
 
