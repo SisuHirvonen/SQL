@@ -1,3 +1,4 @@
+
 ### 1. Tehtävä
 Haku ei löydä "sisu" nimellä mitään mutta lähin mahdollinen on "sisulia"
 
@@ -9,7 +10,7 @@ Haku ei löydä "sisu" nimellä mitään mutta lähin mahdollinen on "sisulia"
 Olen tehnyt käyttäjiä useisiin palveluihin joita en enään käytä. yleensä palveluihin kirjautuessa ei tarvita henkilökohtaisia tietoja kuten syntymäpäivää tai nimeä mutta johonkin henkilökohtaisempiin palveluihin tarvitaan. Oman nimeni olen laittanut palveluihin mutta syntymäpäivän olen lähes aina vaihtanut syystä tai toisesta.
 
 ### 3. Tehtävä
-![nimetön](https://user-images.githubusercontent.com/72853194/116353684-e7a85580-a7ff-11eb-9fef-db3fbe56f583.jpg)
+![taulu](https://user-images.githubusercontent.com/72853194/116972864-56842380-acc4-11eb-96b9-7f9cf9305558.jpg)
 
 ### 4. Tehtävä
 Vataus: SELECT * FROM Kurssisuoritus
