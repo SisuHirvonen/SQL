@@ -25,7 +25,7 @@ Vataus: SELECT DISTINCT kurssi FROM Kurssisuoritus
 Vataus: SELECT * FROM Opiskelija WHERE nimi = 'Anna'
 
 ### 8. Tehtävä
-Vataus: SELECT * FROM Kurssisuoritus WHERE opiskelija = 'Pihla'
+Vataus: SELECT * FROM Kurssisuoritus WHERE opiskelija = '999999'
 
 ### 9. Tehtävä
 Vataus: SELECT * FROM Opiskelija WHERE pääaine  LIKE '%tiede%'
