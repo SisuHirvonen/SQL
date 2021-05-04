@@ -41,8 +41,10 @@ Vataus: SELECT Opiskelija.nimi, Kurssisuoritus.päivämäärä, kurssisuoritus.a
         WHERE Opiskelija.opiskelijanumero = Kurssisuoritus.Opiskelija
 
 ### 12. Tehtävä
-Vataus: SELECT Kurssi.nimi AS kurssi, Kurssitehtävä.tehtävä AS tehtävä
-        FROM Kurssitehtävä, Kurssisuoritus, Kurssi
+Vataus: SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä
+        FROM Kurssitehtävä, Tehtävä, Kurssi
+        WHERE Kurssi.kurssitunnus = Kurssitehtävä.kurssi
+        AND Tehtävä.tunnus = Kurssitehtävä.tehtävä
         
 ### 13. Tehtävä
 Vataus: SELECT Opiskelija.nimi AS Opiskelija, Kurssi.nimi AS Kurssi, Tehtävä.nimi AS Tehtävä
