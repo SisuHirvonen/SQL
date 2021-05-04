@@ -59,9 +59,9 @@ Vataus: SELECT Opiskelija.nimi AS Opiskelija, Kurssi.nimi AS Kurssi, Tehtävä.n
 Koska useampi ihminen on tehnyt saman tehtävän.
 
 ### 15. Tehtävä
-Vataus: SELECT kurssi FROM kurssisuoritus o
-        WHERE o.kurssi
-        NOT IN (SELECT opiskelija FROM Kurssisuoritus)
+Vataus: SELECT nimi FROM Kurssi 
+        WHERE kurssitunnus
+        NOT IN (SELECT kurssi FROM Kurssitehtävä)
  
 ### 16. Tehtävä
 Vataus: SELECT kurssi AS kurssikoodi, COUNT(*) AS lukumäärä
