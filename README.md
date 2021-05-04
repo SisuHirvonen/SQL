@@ -16,7 +16,7 @@ Olen tehnyt käyttäjiä useisiin palveluihin joita en enään käytä. yleensä
 Vataus: SELECT * FROM Kurssisuoritus
 
 ### 5. Tehtävä
-Vataus: SELECT kurssi * FROM Kurssisuoritus
+Vataus: SELECT kurssi FROM Kurssisuoritus
 
 ### 6. Tehtävä
 Vataus: SELECT DISTINCT kurssi FROM Kurssisuoritus
