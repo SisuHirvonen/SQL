@@ -113,6 +113,8 @@ Vataus: CREATE TABLE Tehtävä
 ### 26. Tehtävä
 Vataus: INSERT INTO Tehtävä(nimi) VALUES("Tietoturva");
         INSERT INTO Tehtävä(nimi) VALUES("Tietotekniikka");
+        INSERT INTO Kurissitehtävä (tehtävä, kurssi) VALUES (1,1);
+        INSERT INTO Kurissitehtävä (tehtävä, kurssi) VALUES (2,2);
         
 ### 27. Tehtävä
 Vataus: ALTER TABLE:n avulla voidaan lisätä, poistaa ja muokata olemassa olevia tauluja. Sillä voidaan myös luoda niihin rajoituksia.
