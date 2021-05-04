@@ -49,8 +49,7 @@ Vataus: SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä
 ### 13. Tehtävä
 Vataus: SELECT Opiskelija.nimi AS Opiskelija, Kurssi.nimi AS Kurssi, Tehtävä.nimi AS Tehtävä
     FROM Kurssi, Kurssitehtävä, Tehtävä, Tehtäväsuoritus, Opiskelija
-    WHERE Kurssi.nimi = 'Tietokantojen perusteet'
-        AND Kurssi.kurssitunnus = Kurssitehtävä.kurssi
+    WHERE Kurssi.kurssitunnus = Kurssitehtävä.kurssi
         AND Tehtävä.tunnus = Kurssitehtävä.tehtävä
         AND Tehtäväsuoritus.tehtävä = Kurssitehtävä.tunnus
         AND Tehtäväsuoritus.opiskelija = Opiskelija.opiskelijanumero
